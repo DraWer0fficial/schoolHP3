@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.blog_detail {
+  margin-bottom: 5rem;
+}
+
+.detail_image {
+  margin: 0 auto;
+  width: 50%;
+}
+.detail_image img {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.detail_text {
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Noto Serif JP', serif;
+  width: 50%;
+  padding: 50px 0;
+}
+.detail_text h2 {
+  padding: 0 0 30px 0;
+  font-size: 40px;
+  display: inline-grid;
+}
+.detail_text h2 span {
+  font-weight: normal;
+}
+.detail_text p {
+  font-size: 20px;
+}
+
+/* next>preview要素 */
+.detail_list {
+  margin: 50px 0;
+  align-items: center;
+}
+.detail_list ul {
+  display: flex;
+  justify-content: center;
+}
+.detail_list ul li {
+  margin: 0 20px;
+}
+.detail_list li:hover {
+  opacity: 0.7;
+}
+
+
+/* list二番目の要素をでかくする */
+.detail_list ul li:nth-child(2) {
+  font-size: 20px;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 780px) {
+  
+  .detail_image {
+    width: 80%;
+  }
+  .detail_text {
+    width: 80%;
+  }
+  .detail_text h2 {
+    font-size: 30px;
+  }
+  .detail_text p {
+    font-size: 15px;
+  }
+}

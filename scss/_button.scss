@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.btn {
+  display: inline-block;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+  background: transparent;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 20px 60px;
+  transition: all .5s ease-in-out;
+
+
+  &:hover {
+    border-color: transparent;
+    background: linear-gradient(270deg, rgba(255,255,0,1) 0%,
+    rgba(255,0,78,1) 50%,
+    rgba(192,0,255,1) 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    box-shadow: 0 5px 10px rgba(250, 108, 159, 0.4);
+    z-index: 10;
+  }
+}
+
+// BLOGボタン要素
+.blog_image {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
+// コンタクトフォームボタン要素
+.Form_Btn {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  border: 2px solid #000;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 160px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #000;
+  font-size: 15px;
+  color: #fff;
+
+  &:hover {
+    transition: all .5s;
+    color: #333;
+    background: #fff;
+  }
+}
+
+// formボタンレスポンシブ対応
+@media screen and (max-width: 480px) {
+
+  .Form_Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+  }
+  
+}

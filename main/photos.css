@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/* フォトスライダーCSS */
+.slider {
+  width:94%;
+   margin:0 auto;
+}
+
+.slider img {
+   width:100%;
+   height:auto;
+   background: cover;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+   margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+   position: absolute;
+   top: 42%;
+   cursor: pointer;
+   outline: none;
+   border-top: 2px solid #666;
+   border-right: 2px solid #666;
+   height: 15px;
+   width: 15px;
+}
+
+.slick-prev {
+   left: -1.5%;
+   transform: rotate(-135deg);
+}
+
+.slick-next {
+   right: -1.5%;
+   transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align:center;
+}
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+   color: transparent;
+   outline: none;
+   width:8px;
+   height:8px;
+   display:block;
+   border-radius:50%;
+   background:#ccc;
+}
+
+.slider .slick-dots .slick-active button {
+   background: #E3A4B4;
+}
+
+/* 画像に対する説明テキスト */
+.photo_text {
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 0 10px #ccc;
+  font-family: 'Noto Serif JP', serif;
+  text-align: left;
+}
+.photo_text h3 {
+  padding: 20px 20px 20px 0;
+  font-size: 0.9rem;
+  margin: 0 0 10px 0;
+}
+.photo_text p {
+  font-size: 0.8rem;
+}
+
+/* セクション各自の位置調整 */
+section {
+  padding: 30px 0;
+}
+#winter {
+  margin-bottom: 200px;
+}
+
+/* dotsの色変更CSS */
+
+/* サマースライダーCSS */
+.slider_summer {
+   width:94%;
+    margin:0 auto;
+ }
+ 
+ .slider_summer img {
+    width:100%;
+    height:auto;
+    background: cover;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider_summer .slick-slide {
+    margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+ }
+ 
+ .slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+ }
+ 
+ .slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+   text-align:center;
+ }
+ 
+ .slick-dots li {
+   display:inline-block;
+   margin:0 5px;
+ }
+ 
+ .slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#ccc;
+ }
+ 
+ .slider_summer .slick-dots .slick-active button {
+    background: #F5A806;
+ }
+ 
+
+
+ /* 秋のスライダー */
+ .slider_autumn {
+   width:94%;
+    margin:0 auto;
+ }
+ 
+ .slider_autumn img {
+    width:100%;
+    height:auto;
+    background: cover;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider_autumn .slick-slide {
+    margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+ }
+ 
+ .slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+ }
+ 
+ .slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+   text-align:center;
+ }
+ 
+ .slick-dots li {
+   display:inline-block;
+   margin:0 5px;
+ }
+ 
+ .slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#ccc;
+ }
+ 
+ .slider_autumn .slick-dots .slick-active button {
+    background: #A57027;
+ }
+
+
+
+ 
+ /* 冬のスライダー */
+ .slider_winter {
+   width:94%;
+    margin:0 auto;
+ }
+ 
+ .slider_winter img {
+    width:100%;
+    height:auto;
+    background: cover;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider_winter .slick-slide {
+    margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+ }
+ 
+ .slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+ }
+ 
+ .slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+   text-align:center;
+ }
+ 
+ .slick-dots li {
+   display:inline-block;
+   margin:0 5px;
+ }
+ 
+ .slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#ccc;
+ }
+ 
+ .slider_winter .slick-dots .slick-active button {
+    background: #C1D3E9;
+ }

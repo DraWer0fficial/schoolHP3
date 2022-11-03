@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#slider {
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* HOME画像スリック要素 */
+#box1 {
+  background: url(../images/spring/sakura.jpg) no-repeat center;
+  background-size: cover;
+}
+.box {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#box1.box {
+  justify-content: flex-start;
+}
+
+/* BOX１のシーズンカード四季の説明BOX */
+.season_txt {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  font-family: 'Noto Serif JP', serif;
+}
+.season_txt h2 {
+  font-family: 'Parisienne', cursive;
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin: 0 0 40px 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.season_txt h2 span {
+  font-size: 1.3rem;
+  display: block;
+}
+.season_txt p {
+  margin: 0 0 40px 0;
+}
+
+@media screen and (max-width: 780px) {
+  #box1.box {
+    justify-content: center;
+  }
+}
+
+
+
+/* HOME画像spring春 */
+#box2 {
+  background: url(../images/spring/haru.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* HOME画像summer夏 */
+#box3 {
+  background: url(../images/summer/summer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* HOME画像autumn秋 */
+#box4 {
+  background: url(../images/autumn/fall.jpg) no-repeat  center;
+  background-size: cover;
+}
+
+/* HOME画像winter冬 */
+#box5 {
+  background: url(../images/winter/fuyu.jpg) no-repeat center;
+  background-size: cover;
+}

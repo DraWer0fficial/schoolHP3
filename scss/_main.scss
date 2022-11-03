@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+// タイトルブロック要素
+.Home_title_block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+
+  h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 100px;
+    font-weight: normal;
+  }
+
+  p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+  }
+}
+
+// タイトルブロック要素レスポンシブ対応
+@media screen and (max-width: 780px) {
+
+  .Home_title_block {
+    h1 {
+      font-size: 70px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Home_title_block {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+// ファイル別タイトル要素
+.top_title {
+  text-align: center;
+  letter-spacing: 0.1em;
+  z-index: -10;
+  margin-top: 40px;
+
+  h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 100px;
+    font-weight: normal;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
+// トップタイトルレスポンシブ対応
+@media screen and (max-width: 780px) {
+  .top_title h1 {
+    font-size: 50px;
+  }
+}
+
+
+// HOME季節のタイトル要素ホワイトカラー
+.season_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+
+  h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0 0 40px 0;
+  }
+}
+
+// HOME季節のタイトル要素ホワイトカラーレスポンシブ対応
+@media screen and (max-width: 780px) {
+  .season_title h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .season_title h1 {
+    font-size: 40px;
+  }
+}
+// ヘッダーリストCSS
+#list ul {
+  position: fixed;
+  display: flex;
+  right: 20px;
+  top: 20px;
+  color: #000;
+  z-index: 10;
+
+  li {
+    margin: 0 10px;
+
+    a {
+      font-family: 'Noto Serif JP', serif;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// ヘッダーリストレスポンシブ対応
+@media screen and (max-width: 480px) {
+  #list {
+    top: 5px;
+    right: 5px;
+    
+    li {
+      margin: 0 5px;
+      
+      a {
+        font-size: 10px;
+      }
+      
+    }
+  }
+}
+
+// フッター要素
+footer {
+
+  small {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+}
+
+/* スリックスライド右端丸いやつ */
+.pagenation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  z-index: 10;
+
+  a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    position: relative;
+    padding: 4px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: block;
+      border: 1px solid;
+      border-radius: 50%;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 3px;
+      transition: box-shadow 0.5s ease;
+    }
+
+    .hover_text {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      padding-right: 15px;
+    }
+  }
+}
+
+// photosタイトル要素 季節によって色が変わる
+.photo_season_title {
+  font-family: 'Parisienne', cursive;
+  margin: 0 0 40px 30px;
+
+  h2 {
+    font-weight: normal;
+    font-size: 50px;
+  }
+  .spring {
+    color: #E3A4B4;
+  }
+  .summer {
+    color: #F5A806;
+  }
+  .autumn {
+    color: #A57027;
+  }
+  .winter {
+    color: #C1D3E9;
+  }
+}
+
+// ページトップリンク右下０
+#page_top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(150px);
+}
+#page_top a {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #681064;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all .3s;
+
+  &:hover {
+    background: #777;
+  }
+}
+
+#page_top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(100px);
+
+  .UpMove {
+    animation: UpAnime .5s forwards;
+  }
+  .DownMove{
+    animation: DownAnime 0.5s forwards;
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+

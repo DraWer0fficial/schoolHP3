@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#blog {
+  padding: 4%;
+}
+#blog .blog_all {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+#blog .blog_text {
+  position: absolute;
+  left: 0;
+  width: 27%;
+  font-family: 'Noto Serif JP', serif;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  z-index: 10;
+}
+.blog_text h2 {
+  font-weight: normal;
+  font-size: 70px;
+  text-shadow: 5px 5px 5px #fff;
+}
+.blog_text p {
+  display: inline-block;
+  font-size: 40px;
+  text-shadow: 5px 5px 5px #fff;
+}
+
+.blog_image {
+  width: 80%;
+  z-index: 5;
+  height: auto;
+}
+.blog_image img {
+  width: 100%;
+  height: auto;
+}
+/* 逆にする要素 */
+
+#blog .blog_all:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+#blog .blog_all:nth-of-type(even) .blog_text {
+  text-align: right;
+  margin-left: 70%;
+}
+
+/* テキストナビゲーション */
+.blog_text a {
+  position: relative;
+}
+
+.blog_text:hover {
+  opacity: 0.8;
+}
+
+.blog_text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #444;
+  transition: all .3s;
+  transform: scale(0,1);
+  transform-origin: center top;
+}
+
+/* hoverの設定 */
+.blog_text:hover::after {
+  transform: scale(1,1);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1200px) {
+  .blog_text h2 {
+    font-size: 48px;
+  }
+  .blog_text p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .blog_text h2 {
+    font-size: 36px;
+  }
+  .blog_text p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog_all {
+    margin: 50px 0;
+  }
+  .blog_text h2 {
+    font-size: 15px;
+  }
+  .blog_text p {
+    font-size: 10px;
+  }
+}
+
+/* 位置調整CSS */
+.blog_all:last-child {
+  padding-bottom: 150px;
+}
